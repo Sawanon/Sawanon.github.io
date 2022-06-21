@@ -7,7 +7,7 @@ body {
 }
 
 .bg{
-  position: absolute;
+  position: fixed;
   inset: 0;
   z-index: -1;
   background-color: hsla(0, 60%, 31%, 1);
