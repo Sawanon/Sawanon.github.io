@@ -40,35 +40,35 @@ function Home({}) {
             <div className="row">
               <div className="col">
                 <img src="../src/assets/kotlin.png" width={40} />
-                <div>Kotlin</div>
+                <div className="skill-name">Kotlin</div>
               </div>
               <div className="col">Intermediate</div>
             </div>
             <div className="row">
               <div className="col">
                 <img src="../src/assets/android.png" width={40} />
-                <div>Android</div>
+                <div className="skill-name">Android</div>
               </div>
               <div className="col">Intermediate</div>
             </div>
             <div className="row">
               <div className="col">
                 <img src="../src/assets/php.png" width={40} />
-                <div>PHP</div>
+                <div className="skill-name">PHP</div>
               </div>
               <div className="col">Proficient</div>
             </div>
             <div className="row">
               <div className="col">
                 <img src="../src/assets/react.png" width={40} />
-                <div>React</div>
+                <div className="skill-name">React</div>
               </div>
               <div className="col">Intermediate</div>
             </div>
             <div className="row">
               <div className="col">
                 <img src="../src/assets/flutter.png" height={40} />
-                <div>Flutter</div>
+                <div className="skill-name">Flutter</div>
               </div>
               <div className="col">Intermediate</div>
             </div>
