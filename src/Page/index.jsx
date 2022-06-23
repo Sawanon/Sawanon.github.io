@@ -17,15 +17,17 @@ function Home({}) {
     <div className="container">
       <div className="bg"></div>
       <div className="resume-container">
+        <div className="left-side">
         <div className="img-container">
           <img
             className="img-self"
             src="../src/assets/IMG_2503.png"
-            width={300}
           />
         </div>
-        <div className="left-side">
-          <div className="header-name-text">Non</div>
+          <div className="header-name-text">
+            <div className="fullname-mobile">Sawanon Wattanasit</div>
+            <div>Non</div>
+          </div>
           <div className="header-container light">Profile</div>
           <div className="content-container content-light">
             I am now a software developer at AAPICO. I can work as a theme. I
@@ -73,7 +75,7 @@ function Home({}) {
           </div>
         </div>
         <div className="right-side">
-          <div className="header-name-text">Sawanon Wattanasit</div>
+          <div className="header-name-text fullname-desktop">Sawanon Wattanasit</div>
           <div className="header-container dark">Profile</div>
           <div className="content-container content-dark">
             <div className="sub-header-text">NANOTEC a member of NSTDA</div>
