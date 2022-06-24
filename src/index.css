@@ -183,7 +183,7 @@ body {
   text-align: center;
 }
 
-.fullname-mobile {
+.title .fullname-mobile {
   display: none;
 }
 
@@ -217,7 +217,7 @@ body {
     margin: 1.5rem 0 2rem 1rem;
   }
 
-  .fullname-mobile {
+  .title .fullname-mobile {
     display: block;
   }
 
