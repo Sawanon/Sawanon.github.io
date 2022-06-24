@@ -24,9 +24,9 @@ function Home({}) {
             src="../src/assets/IMG_2503.png"
           />
         </div>
-          <div className="header-name-text">
-            <div className="fullname-mobile">Sawanon Wattanasit</div>
-            <div>Non</div>
+          <div className="header-name-text title" style={{'--duration':'1s'}}>
+              <span style={{'--delay':'.5s'}} className="fullname-mobile">Sawanon Wattanasit</span>
+              <span style={{'--delay':'.8s'}}>Non</span>
           </div>
           <div className="header-container light">Profile</div>
           <div className="content-container content-light">
