@@ -8,7 +8,7 @@ function Home({}) {
   const realLeft = parseInt(parseInt(left / 1000) / 60 / 60 / 24 / 30);
   const showDuration = () => {
     if (realLeft >= 12) {
-      return `${realLeft / 12} year`;
+      return `${parseInt(realLeft / 12)} year`;
     } else {
       return `${realLeft} month`;
     }
