@@ -8,7 +8,9 @@ function Home({}) {
   const realLeft = parseInt(parseInt(left / 1000) / 60 / 60 / 24 / 30);
   const showDuration = () => {
     if (realLeft >= 12) {
-      return `${parseInt(realLeft / 12)} year`;
+      return `${parseInt(realLeft / 12)} year ${
+        realLeft / 12 > 0 && `${realLeft - 12} month`
+      }`;
     } else {
       return `${realLeft} month`;
     }
@@ -18,15 +20,17 @@ function Home({}) {
       <div className="bg"></div>
       <div className="resume-container">
         <div className="left-side">
-        <div className="img-container">
-          <img
-            className="img-self"
-            src="../src/assets/IMG_2503.png"
-          />
-        </div>
-          <div className="header-name-text title" style={{'--duration':'1s'}}>
-              <span style={{'--delay':'.5s'}} className="fullname-mobile">Sawanon Wattanasit</span>
-              <span style={{'--delay':'.8s'}}>Non</span>
+          <div className="img-container">
+            <img className="img-self" src="../src/assets/IMG_2503.png" />
+          </div>
+          <div
+            className="header-name-text title"
+            style={{ "--duration": "1s" }}
+          >
+            <span style={{ "--delay": ".5s" }} className="fullname-mobile">
+              Sawanon Wattanasit
+            </span>
+            <span style={{ "--delay": ".8s" }}>Non</span>
           </div>
           <div className="header-container light">Profile</div>
           <div className="content-container content-light">
@@ -39,43 +43,65 @@ function Home({}) {
           <div style={{ marginTop: "1rem" }}>
             <div className="row">
               <div className="col">
-                <img src="../src/assets/kotlin.png" width={40} />
-                <div className="skill-name">Kotlin</div>
+                <div className="icon-skill-container">
+                  <img src="../src/assets/docker.webp" width={40} />
+                </div>
+                <div className="skill-name">Docker</div>
               </div>
               <div className="col">Intermediate</div>
             </div>
             <div className="row">
               <div className="col">
-                <img src="../src/assets/android.png" width={40} />
-                <div className="skill-name">Android</div>
+                <div className="icon-skill-container">
+                  <img src="../src/assets/nodejs.svg" width={40} />
+                </div>
+                <div className="skill-name">Nodejs</div>
               </div>
               <div className="col">Intermediate</div>
             </div>
             <div className="row">
               <div className="col">
-                <img src="../src/assets/php.png" width={40} />
-                <div className="skill-name">PHP</div>
-              </div>
-              <div className="col">Proficient</div>
-            </div>
-            <div className="row">
-              <div className="col">
+              <div className="icon-skill-container">
                 <img src="../src/assets/react.png" width={40} />
+              </div>
                 <div className="skill-name">React</div>
               </div>
               <div className="col">Intermediate</div>
             </div>
             <div className="row">
               <div className="col">
-                <img src="../src/assets/flutter.png" height={40} />
-                <div className="skill-name">Flutter</div>
+                <div className="icon-skill-container">
+                  <img src="../src/assets/kotlin.png" width={40} />
+                </div>
+                <div className="skill-name">Kotlin</div>
               </div>
               <div className="col">Intermediate</div>
+            </div>
+            <div className="row">
+              <div className="col">
+              <div className="icon-skill-container">
+
+                <img src="../src/assets/android.png" width={40} />
+              </div>
+                <div className="skill-name">Android</div>
+              </div>
+              <div className="col">Intermediate</div>
+            </div>
+            <div className="row">
+              <div className="col">
+              <div className="icon-skill-container">
+                <img src="../src/assets/php.png" width={40} />
+              </div>
+                <div className="skill-name">PHP</div>
+              </div>
+              <div className="col">Proficient</div>
             </div>
           </div>
         </div>
         <div className="right-side">
-          <div className="header-name-text fullname-desktop">Sawanon Wattanasit</div>
+          <div className="header-name-text fullname-desktop">
+            Sawanon Wattanasit
+          </div>
           <div className="header-container dark">Profile</div>
           <div className="content-container content-dark">
             <div className="sub-header-text">NANOTEC a member of NSTDA</div>

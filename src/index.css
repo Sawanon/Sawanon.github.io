@@ -111,6 +111,7 @@ body {
   display: flex;
   /* background: #aaaaaa; */
   /* justify-content: space-around; */
+  margin-top: 1rem;
   padding: 0.5rem 0;
 }
 
@@ -308,4 +309,15 @@ body {
   to{
     transform: translateX(105%);
   }
+}
+
+
+.icon-skill-container {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
 }
