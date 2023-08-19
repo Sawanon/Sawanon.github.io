@@ -1,19 +1,21 @@
 import React from "react";
 import { MdEmail, MdCall } from "react-icons/md";
+import dayjs from "dayjs";
 
 function Home({}) {
-  let now = new Date();
-  let since = new Date("2021-07-01");
-  let left = now - since;
-  const realLeft = parseInt(parseInt(left / 1000) / 60 / 60 / 24 / 30);
   const showDuration = () => {
-    if (realLeft >= 12) {
-      return `${parseInt(realLeft / 12)} year ${
-        realLeft / 12 > 0 && `${realLeft - 12} month`
-      }`;
-    } else {
-      return `${realLeft} month`;
-    }
+    const since = dayjs("2021-07-01")
+    const now = dayjs()
+    const leftYear = now.diff(since, "year")
+    const leftMonth = now.diff(since, "month") - (leftYear * 12)
+    return `${leftYear} year ${leftMonth} month`
+    // if (realLeft >= 12) {
+    //   return `${parseInt(realLeft / 12)} year ${
+    //     realLeft / 12 > 0 && `${realLeft - 12} month`
+    //   }`;
+    // } else {
+    //   return `${realLeft} month`;
+    // }
   };
   return (
     <div className="container">
