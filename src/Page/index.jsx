@@ -55,6 +55,15 @@ function Home({}) {
             <div className="row">
               <div className="col">
                 <div className="icon-skill-container">
+                  <img src="../src/assets/flutter.png" width={32} style={{marginRight: '4px'}} />
+                </div>
+                <div className="skill-name">Flutter</div>
+              </div>
+              <div className="col">Intermediate</div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <div className="icon-skill-container">
                   <img src="../src/assets/nodejs.svg" width={40} />
                 </div>
                 <div className="skill-name">Nodejs</div>
